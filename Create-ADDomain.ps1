@@ -5,6 +5,7 @@
 #   Script to Build a New Forest and Domain on a blank Windows Server                                               #
 # Prerequisites                                                                                                     #
 #   Server must have an additional disk available minimum size 60 GB                                                #
+#   Server should have static IP Address                                                                            #
 # Usage                                                                                                             #
 #   Copy and paste script in to PowerShell window localy in the virtual machie                                      #
 #   Will need to save the AD Safe mode password somewhere                                                           #
@@ -41,4 +42,4 @@ $SysvolPath = $SysvolDisk.DriveLetter + ':\SYSVOL'
 Install-ADDSForest -CreateDnsDelegation:$false -DatabasePath "S:\NTDS" -DomainMode "7" -DomainName "$DomainFQDN" -DomainNetbiosName "$Domain" `
  -ForestMode "7" -InstallDns:$true -LogPath "L:\NTDS" -NoRebootOnCompletion:$false -SysvolPath "$SysvolPath" -Force:$true
 
- #Add Safe Mode Admin password to pop up box
+#Add Safe Mode Admin password to pop up box

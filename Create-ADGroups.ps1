@@ -4,7 +4,7 @@
 # Description                                                                                                       #
 #   Script to create AD Groups from Export AD Groups and membership from all AD Groups           					#
 #   used to check AD Group Nesting                                                                                  #
-# Pre requisites																									#
+# Prerequisites 																									#
 #	Required the Domain OU structure be set up with Create-ADOrganisationalUnits Script								#
 # Usage                                                                                                             #
 #   Copy and paste script in to PowerShell window whilst connected to a Server as a domain admin                    #
